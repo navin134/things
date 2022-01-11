@@ -1,12 +1,12 @@
-package otherthings.fynngallup;
+package otherthings.fynngallup.oop;
 
 public class Car {
 
-    private int doors;
-    private int wheels;
+    // private int doors;
+    // private int wheels;
     private String model;
-    private String engine;
-    private String colour;
+    // private String engine;
+    // private String colour;
 
     public void setModel(String model) {
         String validModel = model.toLowerCase();

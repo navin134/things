@@ -1,4 +1,4 @@
-package otherthings.fynngallup;
+package otherthings.fynngallup.oop;
 
 public class Person {
     private String firstName;
@@ -29,7 +29,7 @@ public class Person {
         
     }
     
-    public String getlastName(){
+    public String getLastName(){
         return lastName;
         
     }
@@ -41,7 +41,7 @@ public class Person {
     
     public boolean isTeen(){
         boolean teen = false;
-        if((age >= 12) && (age < 20)){
+        if((age > 12) && (age < 20)){
             teen = true;
             
         }
@@ -50,22 +50,26 @@ public class Person {
     }
     
     public String getFullName(){
-        boolean first = firstName.isEmpty();
+        String first = firstName;
+        String last = lastName;
+        String middle = (!first.isEmpty() && !last.isEmpty()) ? " " : "";
+        String returnString = firstName + middle + lastName;
+
+        return returnString;
+        /*boolean first = firstName.isEmpty();
         boolean last = lastName.isEmpty();
         String returnString = "";
 
-        if(first && last){
+        if(!first && !last){
             returnString = firstName + " " + lastName;
 
         }else{
-            if(first){
+            if(!first){
                 returnString = firstName;
-            }else{
+            }else if(!last){
                 returnString = lastName;
             }
-        }
-
-        return returnString;
+        }*/
 
     }
 }

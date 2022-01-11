@@ -1,4 +1,4 @@
-package otherthings.fynngallup;
+package otherthings.fynngallup.oop;
 
 public class SimpleCalculator {
     
