@@ -1,4 +1,4 @@
-package otherthings.fynngallup.oop;
+package otherthings.fynngallup.inheritance;
 
 public class Point {
     private int x;
