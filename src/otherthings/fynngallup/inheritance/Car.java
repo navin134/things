@@ -6,33 +6,40 @@ public class Car extends Vehicle {
     private int lights;
     private int doors;
     private int windows;
+    private int gearRatio;
+    private int rotationsPerMinute;
+
     
-    public Car(Point coordinates) {
-        this("Electric battery powered", 1, 1, 45, 1, "defualt colour", 4, 4, 4, 6, coordinates);
+    public Car() {
+        this("Electric battery powered", 1, 1, 45, 1, "defualt colour", 4, 4, 4, 6, 0);
 
     }
 
-    public Car(String modeOfTransportation, int size, int weight, int maxVelocity, int maxAcceleration, String colour, int wheels, int lights, int doors, int windows, Point coordinates) {
-        super(modeOfTransportation, "joules", size, weight, 1, 1, maxVelocity, maxAcceleration, coordinates);
+    public Car(String modeOfTransportation, int size, int weight, int maxVelocity, int maxAcceleration, String colour, int wheels, int lights, int doors, int windows, double velocity) {
+        super(modeOfTransportation, "joules", size, weight, 1, 1, maxVelocity, maxAcceleration, velocity);
         this.colour = colour;
         this.wheels = wheels;
         this.lights = lights;
         this.doors = doors;
         this.windows = windows;
+        this.gearRatio = 1;
+        this.rotationsPerMinute = 0;
 
     }
 
 
 
     public double destinationTime(int x, int y) {
-        double minTime = super.destinationTime(x, y);
-        System.out.println("Min time to destination: " + minTime);
+        double distance = super.destinationTime(x, y);
+        
+        System.out.println("approximate time to destination " + minToDest + "minutes");
 
         return 0;
     }
 
     public String getColour() {
         return this.colour;
+
     }
 
     public void setColour(String colour) {
