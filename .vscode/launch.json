@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Launch Main",
             "request": "launch",
+            "mainClass": "otherthings.fynngallup.composition.Main",
+            "projectName": "things_6f8829d7"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
             "mainClass": "otherthings.fynngallup.inheritance.Main",
             "projectName": "things_6f8829d7"
         },

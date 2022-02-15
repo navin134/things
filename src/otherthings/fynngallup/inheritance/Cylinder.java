@@ -3,7 +3,7 @@ package otherthings.fynngallup.inheritance;
 public class Cylinder extends Circle {
     private double height;
     
-    public Cylinder(double height, double radius) {
+    public Cylinder(double radius, double height) {
         super(radius);
         if(height < 0) {
             this.height = 0;
